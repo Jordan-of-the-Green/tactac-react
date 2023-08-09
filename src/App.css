@@ -1,38 +1,65 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin: auto;
+  background: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+  margin: auto;
+}
+
 .App {
   text-align: center;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.like-button-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
 }
+.like-button {
+   background-color: Transparent;
+   padding: none;
+   border: none;
+   cursor: pointer;
+   overflow: hidden;
+   font-size: larger;
+   font-weight: bolder;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.like-button:hover {
+   color: #fff;
+   background-color: #333;
+}
+.like-button.liked {
+   color: #ff69b4;
+   border-color: #ff69b4;
+}
+/* For mobile screens */
+@media (max-width: 768px) {
+   .like-button-container {
+      flex-direction: column;
+   }
+} 
+
+
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
 }
